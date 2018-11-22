@@ -1,0 +1,31 @@
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation">
+
+    <section id="container">
+      <header class="header clearfix">
+        <div class="brand">
+
+          <a routerLink="/home" class="logo">
+            <img src="images/omniwyse-logo.png">
+          </a>
+
+          <!-- <div class="container">
+            <h4>EmpId: <b>{{EmpId}}</b> </h4>
+            <h4>EmpName: <b>{{EmpName|uppercase}}</b> </h4>
+            <h4>EMail: <u>{{EMail}}</u> </h4>
+          </div> -->
+        </div>
+      </header>
+    </section>
+
+      <mat-nav-list>
+          <app-menu-list-item *ngFor="let item of navItems" [item]="item">
+            <a routerLink={{item}} routerLinkActive="active">
+             
+          </a> 
+          </app-menu-list-item>
+        </mat-nav-list>  </mat-sidenav>
+  <mat-sidenav-content>
+ </mat-sidenav-content>
+</mat-sidenav-container>

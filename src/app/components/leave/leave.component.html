@@ -1,0 +1,99 @@
+<section id="main-content">
+        <div *ngFor="let leave of results6" class="market-updates">
+            <div class="col-md-4 market-update-gd">
+                <div class="market-update-block clr-block-1">
+                    <div class="col-md-12 market-update-left">
+                        <h4>Earned Leaves</h4>
+                        <h3>{{leave.EL}}</h3>
+
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="col-md-4 market-update-gd">
+                <div class="market-update-block clr-block-2">
+                    <div class="col-sm-12 market-update-left">
+                        <h4>Casual Leaves</h4>
+                        <h3>{{leave.CL}}</h3>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4 market-update-gd">
+                <div class="market-update-block clr-block-3">
+                    <div class="col-md-12 market-update-left">
+                        <h4>Leave Balance </h4>
+                        <h3>13</h3>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div> -->
+            <div class="clearfix"> </div>
+        </div>
+        <div class="table-agile-info">
+
+
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="pull-left ellipsis">Applied Leaves</div>
+
+                    <div class="pull-right">
+                        <!-- <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#newLeave">
+                            <i class="fa fa-plus"></i> Apply Leave
+                        </button> -->
+                        <button mat-raised-button class="btn btn-success" (click)="openDialog()">Apply Leave</button>
+
+                        <!-- <ol>
+                          <li>
+                            <mat-form-field>
+                              <input matInput [(ngModel)]="name" placeholder="What's your name?">
+                            </mat-form-field>
+                          </li>
+                          <li>
+                            <button mat-raised-button (click)="openDialog()">Pick one</button>
+                          </li>
+                          <li *ngIf="animal">
+                            You chose: <i>{{animal}}</i>
+                          </li>
+                        </ol> -->
+                    </div>
+                    <div>
+                    </div>
+                </div>
+
+
+
+                <div class="table-responsive" >
+                    <table class="table table-striped b-t b-light">
+                        <thead >
+                          
+                                <tr>
+                                    <th>From Date</th>
+                                    <th>To Date</th>
+                                    <th>Total Leaves</th>
+                                    <th>Reason</th>
+                                    <th>Status</th>
+                                </tr>
+                           
+                        </thead>
+                        <tbody>
+                          
+                            <tr *ngFor="let leave of results5">
+                                <td>{{leave.StartDate|date}} </td>
+                                <td>{{leave.EndDate|date}}</td>
+                                <td>{{leave.TotalDays}}</td>
+                                <td>{{leave.ReasonForLeave}}</td>
+                                <td>{{leave.Status}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               
+            </div>
+        </div>
+</section>
+
+
+

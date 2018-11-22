@@ -1,0 +1,82 @@
+<body>
+    <section >
+        <!--header start-->
+  
+        <!--header end-->
+        <!--sidebar start-->
+  
+        <!--sidebar end-->
+        <!--main content start-->
+        <form ngNativeValidate [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)" class="form">
+  
+        <mat-form-field class="fullwidth">
+          <input matInput formControlName="fromDate" type="date" 
+             placeholder="From Date" id="fromDate" [(ngModel)]="reports.fromDate" name="fromDate"
+            required>
+          
+          <!-- <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker> -->
+        </mat-form-field>
+    
+        <mat-form-field class="fullwidth">
+          <input matInput formControlName="toDate" type="date"  
+             placeholder="To Date" id="toDate" [(ngModel)]="reports.toDate" name="toDate" required>
+         
+          <!-- <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker> -->
+        </mat-form-field>
+        <button mat-raised-button  color="primary" type="submit" class="button" [disabled]="!formGroup.valid">Submit</button>
+      </form>
+  
+        <section id="main-content">
+                <div class="table-agile-info">
+                    <div class="panel panel-default">
+                        <div class="panel-heading ellipsis">
+                           Leaves Report 
+                        </div>
+                        <!-- <div class="pull-right">
+                            <button mat-raised-button class="btn btn-success" (click)="openDialog()">Apply Leave</button>
+  
+                        </div> -->
+                        <div class="table-responsive">
+                            <table class="table table-striped b-t b-light">
+                                <thead>
+                                    <tr>
+                                        <th>Emp. ID</th>
+                                        <th>Emp. Name</th>
+                                        <!-- <th>Start Date</th>
+                                        <th>End Date</th> -->
+                                        <th>Total Leaves</th>
+                                        <!-- <th>Reason</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of result2 ">
+                                        <td class="align-center">{{item.EmpId}}</td>
+                                        <td>{{item.EmpName}}</td>
+                                        <!-- <td>{{item.StartDate}}</td>
+                                        <td>{{item.EndDate}}</td> -->
+                                        <td>{{item.TotalDays}}</td>
+                                        <!-- <td>{{item.ReasonForLeave}}</td> -->
+  
+                                    </tr>
+  
+  
+  
+                                </tbody>
+                            </table>
+                        </div>
+  
+                    </div>
+                </div>
+           
+        </section>
+        <!--main content end-->
+    </section>
+  
+  
+  
+  
+  
+  
+  </body>

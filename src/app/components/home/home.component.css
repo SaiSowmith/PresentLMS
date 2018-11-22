@@ -1,0 +1,27 @@
+u{
+    color:red;
+}
+b{
+    color: blue;
+}
+h4{
+    text-align:auto;
+}
+.active{
+    color:white;
+  }
+  #icon{
+    color:white;
+    }
+    .mat-accordion{
+color:black;
+background-color: black;
+    }
+
+.mat-expansion-panel{
+    color:black;
+        /* background-color: #313745; */
+    }
+h2{
+ color:green;
+  }

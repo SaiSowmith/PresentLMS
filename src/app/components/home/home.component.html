@@ -1,0 +1,517 @@
+<section id="main-content">
+    <div class="div-agile-info">
+      <div class="panel panel-default">
+       
+       <h2> Hello {{EmpName}}</h2> <br>
+        Welcome to LMS
+
+      </div>
+    </div>
+    <!-- //market-->
+    <div class="market-updates">
+      <div class="col-md-6 market-update-gd">
+
+        <div class="col-md-12 market-update-left">
+          <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+              <thead>
+                <tr>
+                  <th colspan="2">Personal Info</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>{{EmpName}}</td>
+                </tr>
+                <tr>
+                  <td>ID</td>
+                  <td>{{EmpId}}</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>{{EMail}}</td>
+                </tr>
+                <tr>
+                  <td>DOJ</td>
+                  <td>{{EmpDOJ}}</td>
+                </tr>
+                <tr>
+                  <td>Blood Group</td>
+                  <td>O +ve</td>
+                </tr>
+                <tr>
+                  <td>Emergency Contact No.</td>
+                  <td>9246287919</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-md-6 market-update-gd">
+        <div class="col-md-12 market-update-left">
+          <div class="table-responsive">
+            <table class="table table-striped b-t b-light">
+              <thead>
+                <tr>
+                  <th colspan="2">Company Related Info</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Designation</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>Team</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>Reporting Manager</td>
+                  <td>{{RMName}}</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"> </div>
+    </div>
+    <!-- //market-->
+
+  </section>
+
+
+
+
+
+<!-- <body>
+  <section id="container">
+    <header class="header fixed-top clearfix">
+      <div class="brand">
+        <a routerLink="/home" class="logo">
+          <img src="images/omniwyse-logo.png">
+        </a>
+        <div class="sidebar-toggle-box">
+          <div class="fa fa-bars"></div>
+        </div>
+      </div>
+
+      <div class="top-nav clearfix">
+        <ul class="nav pull-right top-menu">
+
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" routerLink="/home">
+              <img alt="" src="images/2.png">
+              <span class="username">{{EmpName}}</span>
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+              <li><a routerLink="/home"><i class=" fa fa-suitcase"></i>Profile</a></li>
+              <li><a routerLink="#"><i class="fa fa-cog"></i> Settings</a></li>
+              <li><a routerLink="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </header>
+    <div id="sidebar" class="nav-collapse">
+      <div class="leftside-navigation">
+
+
+        <ul class="sidebar-menu" id="nav-accordion">
+          <mat-accordion>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title routerLink="/home">
+                  <mat-icon>home</mat-icon>
+                  Dashboard
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>
+
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title routerLink="/employees-list">
+                  <mat-icon></mat-icon>
+                  Employees List
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>calendar_view_day</mat-icon>
+
+                  Leave Management
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-option routerLink="/applied-leaves">
+                <mat-icon>menu</mat-icon>
+                Applied Leaves
+              </mat-option>
+              <mat-option routerLink="/employees-applied-leaves">
+                <mat-icon>account_balance_wallet</mat-icon>
+                Employees Applied Leaves
+              </mat-option>
+            </mat-expansion-panel>
+
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>explicit</mat-icon>
+                  Expensive Management
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-option routerLink="/exp-list">
+                <mat-icon>menu</mat-icon>
+                Expenses List
+              </mat-option>
+              <mat-option routerLink="/exp-applied">
+                <mat-icon>account_balance_wallet</mat-icon>
+                Applied Expenses
+              </mat-option>
+
+            </mat-expansion-panel>
+
+
+          </mat-accordion> -->
+          <!-- <li>
+                            <a routerLink="/home">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li><a routerLink="/employees-list">Employees List</a></li>
+                        <li class="sub-menu">
+                            <a routerLink="javascript:;">
+                                <span>Leave Management</span>
+                            </a>
+                            <ul class="sub">
+
+                                <li><a routerLink="applied_leaves.html">Applied Leaves</a></li>
+                                <li><a routerLink="employees_applied_leaves.html">Employees Applied Leaves</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a routerLink="javascript:;">
+                                <span>Expensive Management</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a routerLink="expenses_list.html">Expenses List</a></li>
+                                <li><a routerLink="applied_expenses.html">Applied Expenses</a></li>
+                            </ul>
+                        </li> -->
+
+        <!-- </ul>
+      </div>
+    </div>
+
+  </section>
+
+</body> -->
+
+<!-- <mat-sidenav-container class="example-container">
+
+  <mat-sidenav #sidenav class="example-sidenav" mode="push">
+
+    <section id="container">
+
+      <header class="header  clearfix">
+
+        <div class="brand">
+          <a routerLink="/home" class="logo">
+            <img src="images/omniwyse-logo.png">
+          </a>
+
+          <div class="container">
+            <h4>EmpId: <b>{{EmpId}}</b> </h4>
+            <h4>EmpName: <b>{{EmpName|uppercase}}</b> </h4>
+            <h4>EMail: <u>{{EMail}}</u> </h4>
+          </div>
+        </div>
+
+      </header>
+
+    </section>
+
+    <mat-nav-list>
+      <div id="sidebar" class="nav-collapse">
+        <div class="leftside-navigation">
+
+            <mat-accordion>
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title routerLink="/home">
+                          <mat-icon>home</mat-icon>
+                            Home
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-option routerLink="/sidenav">Dashboard</mat-option>
+  
+                </mat-expansion-panel>
+  
+              <mat-expansion-panel>
+                
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <mat-icon>calendar_view_day</mat-icon>
+  
+                    Leave Management
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-option routerLink="/leave">
+                  <mat-icon>menu</mat-icon>
+                  Apply Leave
+                </mat-option>
+                <mat-option routerLink="/home">
+                  <mat-icon>account_balance_wallet</mat-icon>
+                  Leave Balance
+                </mat-option>
+              </mat-expansion-panel>
+  
+  
+              <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <mat-icon>explicit</mat-icon>
+                        Expense Management
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-option routerLink="/exp-mng">1</mat-option>
+                  <mat-option routerLink="/home">2</mat-option>
+              </mat-expansion-panel>
+              
+  
+            </mat-accordion>
+        </div>
+      </div>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+
+
+
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.open()" *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="sidenav.open()">
+            <mat-icon>menu</mat-icon>
+          LMS
+        </button>
+      </div>
+      <div class="nav pull-right top-menu">
+
+        <ul class="nav pull-right top-menu">
+
+          <mat-card-content>
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle">
+
+                <button mat-raised-button color="secondary" [matMenuTriggerFor]="menu">
+                  <mat-icon>person</mat-icon>
+                  <span class="username">{{EmpName}}</span>
+                </button>
+              </a>
+              <ul class="dropdown-menu extended logout">
+
+                <mat-menu #menu="matMenu">
+                  <button mat-menu-item [matMenuTriggerFor]="subMenu">
+                    <mat-icon>account_box</mat-icon>
+                    <span>Profile</span>
+                  </button>
+                  <button mat-menu-item [matMenuTriggerFor]="subMenu2">
+                    <mat-icon>settings</mat-icon>
+                    <span>Settings</span>
+                  </button>
+                  <button mat-menu-item>
+                    <mat-icon>arrow_back</mat-icon>
+                    <span>Log Out</span>
+                  </button>
+                </mat-menu>
+              </ul>
+              <mat-menu #subMenu2="matMenu">
+                <button mat-menu-item>General</button>
+                <button mat-menu-item>Display</button>
+              </mat-menu>
+
+              <mat-menu #subMenu="matMenu">
+                <h4 mat-menu-item>EmpId: <b>{{EmpId}}</b> </h4>
+                <h4 mat-menu-item>EmpName: <b>{{EmpName|uppercase}}</b> </h4>
+                <h4 mat-menu-item>EMail: <u>{{EMail}}</u> </h4>
+                <button mat-menu-item>General</button>
+                <button mat-menu-item>Display</button>
+              </mat-menu>
+            </li>
+          </mat-card-content>
+
+        </ul>
+
+      </div>
+    </mat-toolbar>
+
+    <section>
+
+      <section id="container">
+
+        <header class="header  clearfix">
+
+
+  
+                </div>
+          <div>
+            <h4>EmpId: <b>{{EmpId}}</b> </h4>
+            <h4>EmpName: <b>{{EmpName|uppercase}}</b> </h4>
+            <h4>EMail: <u>{{EMail}}</u> </h4>
+          </div>
+        </header>
+
+      </section>
+      <section>
+
+        <div class="market-updates">
+          <div class="col-md-4 market-update-gd">
+            <div class="market-update-block clr-block-1">
+              <div class="col-md-12 market-update-left">
+                <h4>Total Leaves</h4>
+                <h3>18</h3>
+
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+          <div class="col-md-4 market-update-gd">
+            <div class="market-update-block clr-block-2">
+              <div class="col-md-12 market-update-left">
+                <h4>Availed Leaves</h4>
+                <h3>5</h3>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+          <div class="col-md-4 market-update-gd">
+            <div class="market-update-block clr-block-3">
+              <div class="col-md-12 market-update-left">
+                <h4>Leave Balance </h4>
+                <h3>13</h3>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+        <div class="table-agile-info">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Applied Leaves
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-striped b-t b-light">
+                <thead>
+                  <tr>
+
+                    <th>From Date</th>
+                    <th>To Date</th>
+                    <th>Total Leaves</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>25-10-2018</td>
+                    <td>26-10-2018</td>
+                    <td>2</td>
+                    <td><span class="badge badge-success">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>25-10-2018</td>
+                    <td>26-10-2018</td>
+                    <td>2</td>
+                    <td><span class="badge badge-success">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>25-10-2018</td>
+                    <td>26-10-2018</td>
+                    <td>2</td>
+                    <td><span class="badge badge-success">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>25-10-2018</td>
+                    <td>26-10-2018</td>
+                    <td>2</td>
+                    <td><span class="badge badge-success">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>25-10-2018</td>
+                    <td>26-10-2018</td>
+                    <td>2</td>
+                    <td><span class="badge badge-success">Approved</span></td>
+                  <tr>
+                    <td>25-10-2018</td>
+                    <td>26-10-2018</td>
+                    <td>2</td>
+                    <td><span class="badge badge-warning">In Progress</span></td>
+                  </tr>
+                  <tr>
+                    <td>25-10-2018</td>
+                    <td>26-10-2018</td>
+                    <td>2</td>
+                    <td><span class="badge badge-success">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>25-10-2018</td>
+                    <td>26-10-2018</td>
+                    <td>2</td>
+                    <td><span class="badge badge-danger">Rejected</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <footer class="panel-footer">
+              <div class="row">
+
+                <div class="col-sm-5 text-center">
+                  <small class="text-muted inline m-t-sm m-b-sm">showing 20-30 of 50 items</small>
+                </div>
+
+                <div class="col-sm-7 text-right text-center-xs">
+                  <ul class="pagination pagination-sm m-t-none m-b-none">
+                    <li><a href=""><i class="fa fa-chevron-left"></i></a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href=""><i class="fa fa-chevron-right"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </footer>
+          </div>
+        </div>
+
+      </section>
+
+    </section>
+  </mat-sidenav-content>
+
+</mat-sidenav-container> -->
